@@ -11,6 +11,9 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+    position: fixed;
+    top: 0px;
+    width: 100%;
 }
 
 .nav-logo{
@@ -19,7 +22,7 @@
 }
 
 .logo{
-    background-image: url("amazon_logo.png");
+    background-image: url("./images/amazon_logo.png");
     background-size: cover;
     height: 50px;
     width: 100%; 
@@ -89,7 +92,7 @@
 }
 
 .search-input:hover{
-    border: 2px solid #febd68;
+    border: 2px solid #fea735;
 }
 
 .search-select:hover{
@@ -97,12 +100,16 @@
 }
 
 .fa-solid.fa-location-dot:hover{
-    background-color:#fea735 ;
+    background-color:#febd68 ;
 }
 
 /* box4 */
 span{
     font-size: 0.7rem;
+}
+.nav-signin-border a{
+    color: white;
+    text-decoration: none;
 }
 .nav-second{
     font-size: 0.85rem;
@@ -121,6 +128,7 @@ span{
 }
 
 /* panel */
+
 .panel{
     height: 40px;
     background-color: #222f3d;
@@ -128,6 +136,8 @@ span{
     color: white;
     align-items: center;
     justify-content: space-evenly;
+    position:relative ;
+    top: 60px;
 }
 .panel-ops p{
     display: inline;
@@ -135,29 +145,32 @@ span{
     margin:5px 0px 6px;
     padding: 8px 9px;   
 }
-
+.panel a{
+    color: white;
+    text-decoration: none;
+}
 .panel-deals{
-    height: 39px;
+    height: 36px;
     width: 400px;
 }
 
      /* hero section */
 .main-section{
-    background-color: #febd68;
+    background-color: #ffd77d;
 }
 
 .first-hero-section{
-    background-image: url("hero_image.jpg");
+    background-image: url("./images/hero_image.jpg");
     background-size:cover;
     height: 330px;
 }
 .second-hero-section{
-    background-image: url("bank offer.jpg");
+    background-image: url("./images/bank offer.jpg");
     background-size: cover;
     height: 165px;
 }
 .third-hero-section{
-    background-image: url("hero_image2.jpg");
+    background-image: url("./images/hero_image2.jpg");
     background-size: cover;
     height:80px;
 }
@@ -197,36 +210,96 @@ span{
 /* shioping section 2nd line   */
 
 .second-box-section{
-    background-color: white;
+    background-color: rgb(255, 255, 255);
     margin-top: 20px;
-}
+    max-height: 250px;
+    padding: 10px 20px;
 
+}
+.card::-webkit-scrollbar{
+    width: 0px;
+}
 .card {
   display: flex;
   min-width: 100%;
-  min-height: 200px;
+  /* max-height: 230px; */
   margin: 1rem;
   overflow-x: auto;
 }
 .card--content {
   height: 203px;
-  width: 250px;
+  width: 230px;
   min-width: 200px;
   margin: 5px;
+}
+/* shoping section 3rd line */
+.third-box-section{
+    background-color: rgb(255, 255, 255);
+    max-height: 250px;
+    margin-top: 20px;
+    padding: 10px 20px;
+
+}
+/* shoping section 4th line  */
+ 
+.box-section h2 { 
+    color: #000000; 
+    font-family: Arial, sans-serif; 
+    font-size: 21px !important;
+    line-height: 27.3px !important;
+    margin-left: 1rem;
+    margin-right: 1rem;
+ }
+
+.images-row {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 20px;
+}
+
+/* Har image aur uske text ka alag container */
+.image-box {
+    text-align: center;
+    width: 180px;
+}
+
+/* Image styling */
+.image-box img {
+    width: 155px;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.image-box p {
+    position: relative;
+    left: 5px;
+    margin-top: 10px;
+    font-size: 12px;
+    color: #555;
+}
+.images-content span {
+    display: block;
+    bottom: 10px;
+}
+.box-content a:hover{
+    color: #fea735;
 }
 
 /*  shoping section 4th line*/
 .fourth-box-section{
-    background-color: white;
-    margin-top: 10px;
+    background-color: rgb(255, 255, 255);
+    margin-top: 20px;
+    padding: 10px 20px;
+
 }
 .fourth-box-section p {
     font-size: 24px;
     font-weight: 700;
     margin-left: 20px;
-    display: flex;
+    display:flex;
     justify-content:left;
-    margin-top: px;
+    margin-top:10px;
 }
 .card--content2{
     height: 200px;
@@ -239,8 +312,11 @@ span{
  .third-card { 
     display: flex;  
     min-width: 100%; 
-    min-height: 200px; 
+    max-height: 229px; 
     margin: 1rem;
     overflow-x: auto;  
     
    } 
+   .third-card::-webkit-scrollbar{
+    width: 0px;
+   }
